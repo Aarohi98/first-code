@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		body{
+			font-family: 'Roboto', sans-serif;
+			background: linear-gradient(to right,lightcyan,slateblue);
+		}
+
+		.main-container{
+			display: flex;
+			margin: 30px 0 0 50px;
+		}
+
+		.subs a{
+			width: 120px;
+			height: 30px;
+			text-decoration: none;
+			font-size: 20px;
+			border: 2px solid transparent;
+			background-color: darkslateblue;
+			color: white;
+			padding: 10px;
+			margin: 0 50px 0 0;
+			text-align: center;
+			/* border-radius: 10px; */
+			/* opacity: 0.7; */
+
+		}
+
+		.subs a:hover{
+			background-color: white;
+			color: darkslateblue;
+			border: 2px solid darkslateblue;
+		}
+
+		.main-grid{
+			width: 1310px;
+			height: 100%;
+			/* border: 1px solid black; */
+			margin: 40px 0 0 5px;
+			padding: 10px;
+			/* background-color: white; */
+			display: grid;
+			grid-template-columns: repeat(3,430px);
+			grid-template-rows: repeat(2,430px);
+			grid-gap: 10px 10px;
+		}
+
+		.league-name{
+			width: 1300px;
+			height: 300px;
+			margin: 30px 0 0 20px;
+			font-family: 'Charmonman', sans-serif;
+
+		}
+
+		.league-name h1{
+			font-size: 90px;
+			text-align: center;
+			margin: 100px 0 0 0;
+		}
+
+		.league-name h2{
+			text-align: center;
+			margin: 0;
+		}
+
+		.sub{padding:5px;}
+
+		.sub-grid-1{
+			
+			grid-column: 1/2;
+			grid-row: 1/2;
+		}
+
+		.sub-grid-2{
+			
+			grid-column: 2/3;
+			grid-row: 1/2;
+		}
+
+		.sub-grid-3{
+			
+			grid-column: 3/4;
+			grid-row: 1/2;
+		}
+
+		.sub-grid-4{
+			
+			grid-column: 1/2;
+			grid-row: 2/3;
+		}
+
+		.sub-grid-5{
+			
+			grid-column: 2/3;
+			grid-row: 2/3;
+		}
+
+		.sub-grid-6{
+			grid-column: 3/4;
+			grid-row: 2/3;
+		}
+
+		.info{
+			width: 1000px;
+			height: 400px;
+			margin: 30px 0 0 150px;
+			padding: 10px; 
+		}
+
+		.info li{
+			list-style-type: none;
+		}
+
+		.info a{color: darkslateblue; text-decoration: none;}
+
+		.info-flex{
+			display: flex;
+		}
+
+		.flex{
+			display: flex;
+			flex-direction: column;
+		}
+
+		.flex1{flex-basis: 300px;}
+		.flex2{flex-basis: 300px;}
+		.flex3{flex-basis: 450px;}
+
+	</style>
+</head>
+<body>
+
+<div class="main-container">
+	<div class="subs sub1"><a href="cricket_homepage.html">Home</a></div>
+	<div class="subs sub1"><a href="matches.html">Matches and Results</a></div>
+	<div class="subs sub2"><a href="teams.html">Teams and players</a></div>
+	<div class="subs sub4"><a href="venue.html">Venues</a></div>
+	<div class="subs sub5" style="right: 0; position: absolute;"><a href="score.html">Score Table</a></div>
+</div>
+
+<div class="league-name">
+	<h1>MPL</h1>
+	<h2>Mixed Premier League</h2>
+</div>
+<div class="main-grid">
+	<div class="sub sub-grid-1">
+		<div id="sub-grid1-sub1"><img src="cricket/b1.jpg"></div>
+	</div>
+
+	<div class="sub sub-grid-2">
+		<div id="sub-grid2-sub1"><img src="cricket/b2.jpg"></div>
+	</div>
+
+	<div class="sub sub-grid-3">
+		<div id="sub-grid3-sub1"><img src="cricket/b3.jpg"></div>
+	</div>
+
+	<div class="sub sub-grid-4">
+		<div id="sub-grid4-sub1"><img src="cricket/b4.jpg"></div>
+	</div>
+
+	<div class="sub sub-grid-5">
+		<div id="sub-grid5-sub1"><img src="cricket/b5.jpg"></div>
+	</div>
+
+	<div class="sub sub-grid-6">
+		<div id="sub-grid6-sub1"><img src="cricket/b6.jpg"></div>
+	</div>
+</div>
+
+<div class="info">
+
+	<div class="info-flex">
+		<div class="flex flex1">
+			<h3 style="color: orangered;"><i>Mixed Premier League</i></h3>
+			<li><a href="cricket_homepage.html">Home</a></li>
+			<li><a href="teams.html">Teams</a></li>
+			<li><a href="score.html">Points Table</a></li>
+
+		</div>
+
+		<div class="flex flex2">
+			<h3>TEAMS</h3>
+			<li><a href="mumbai.html">Mumbai indians</a></li>
+			<li><a href="chennai.html">Chennai Super Kings</a></li>
+			<li><a href="kolkata.html">Kolkata Knight Riders</a></li>
+			<li><a href="punjab.html">Punjab Kings</a></li>
+			<li><a href="delhi.html">Delhi Capital</a></li>
+			<li><a href="bangalore.html">Royal Challengers Bangalore</a></li>
+			<li><a href="rajasthan.html">Rajasthan Royals</a></li>
+			<li><a href="hyderabad.html">Sunrisers Hyderabad</a></li>
+		</div>
+
+		<div class="flex flex3">
+			<h3>CONTACT</h3>
+			<li><a href="cricket_contact.html">Contact Us</a></li>
+		</div>
+
+		<div class="flex flex4">
+			<h3>COUNTRIES</h3>
+			<li>India</li>
+			<li>Australia</li>
+			<li>New Zealand</li>
+			<li>England</li>
+		</div>
+	</div>
+</body>
+</html>
